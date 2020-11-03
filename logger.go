@@ -32,4 +32,9 @@ type Logger interface {
 	Warn(message string, opts ...Option)
 	Error(message string, opts ...Option)
 	Fatal(message string, opts ...Option)
+	Debugf(format string, args ...interface{})
+	Infof(format string, args ...interface{})
+	Warnf(format string, args ...interface{})
+	Errorf(format string, args ...interface{})
+	Fatalf(format string, args ...interface{})
 }
